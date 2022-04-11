@@ -70,8 +70,8 @@ def load():
     try:
         yt = YouTube(video, on_progress_callback=pbar)
         print(yt)
-        test = yt.streams.all()
-        print(test)
+        test = yt.streams.all() # Raises exeption
+        # print(test)
         try:
             
             if type=="Audio":
